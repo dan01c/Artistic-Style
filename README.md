@@ -1,4 +1,4 @@
-# Artistic-Style
+# Artistic Style
 
 Este trabajo esta basado en [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) \[[PDF](https://arxiv.org/pdf/1508.06576.pdf)\]
 
@@ -19,6 +19,7 @@ Los orígenes de las redes neuronales convolucionales se remontan a los años se
 ### Representación
 
 ## Método
+$p_l$
 
 ## Proceso
 
