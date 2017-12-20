@@ -19,15 +19,11 @@ Los orígenes de las redes neuronales convolucionales se remontan a los años se
 #### Campos receptivos locales
 En las capas completamente conectadas que se muestran anteriormente, las entradas se representaron como una línea vertical de neuronas. En una red convolucional, ayudará a pensar en lugar de las entradas como n×n cuadrado de neuronas, cuyos valores corresponden a nxn intensidades de píxeles que estamos utilizando como entradas:
 
-<center>Red convolucional</center> | <center>Campo receptivo</center> 
--- | --
-![](http://neuralnetworksanddeeplearning.com/images/tikz42.png) | ![](http://neuralnetworksanddeeplearning.com/images/tikz43.png)
+![](img/u3.png)
 
 Para toda la capa tenemos:
 
-<center>Iniciando</center> | <center>Tamaño de paso 1</center> 
--- | --
-![](http://neuralnetworksanddeeplearning.com/images/tikz44.png) | ![](http://neuralnetworksanddeeplearning.com/images/tikz45.png)
+![](img/u4.png)
 
 #### Pesos y sesgos(bias) compartidos
 
@@ -45,9 +41,7 @@ Además de las capas convolucionales que acabamos de describir, las redes neuron
 
 Una capa de agrupamiento toma cada mapa de características  salida de la capa convolucional y prepara un mapa de características condensado. Por ejemplo, cada unidad en la capa de agrupamiento puede resumir una región de (digamos) 5x5 neuronas en la capa anterior por ejemplo, un procedimiento común para agrupar se conoce como ___max-pooling__
 
-<center>Una caracteristica</center> | <center>Tres caracteristicas</center> 
--- | --
-![](http://neuralnetworksanddeeplearning.com/images/tikz47.png) | ![](http://neuralnetworksanddeeplearning.com/images/tikz48.png)
+![](img/u5.png)
 
 #### Función de activación ReLU
 
@@ -67,18 +61,7 @@ La red VGG consta de 16 capas de convolución y ReLU no lineal, separadas por 5 
 
 Notación:
 
-- $l$ : La capa actual
-- $N_l$ : Número de filtros de la capa $l$
-- $M_l$ : Tamaño de la Representación característica que es es el producto de la anchura por la anchura del  mapa de características
-- $x$ : Imagen a generar
-- $p$ : Contendido (imagen original)
-- $a$ : Estilo
-- $F^l$ : Representación característica generado por $x$
-- $F^l \in R^{N_l x M_l}$
-- $ F^l_{ij}$ : Activación del i-ésimo filtro en la posición $j$ de la capa $l$
-- $P^l$ : Representación característica generado por $p$
-- $w_l$ : Factor de contribución de cada capa para el estilo.
-- $G^l$ : Representación de estilo de $x$
+![Imagen](img/i7.png)
 
 Los resultados se generan sobre la base de la red VGG[4] su web [aquí](http://www.robots.ox.ac.uk/~vgg/research/very_deep/), una red neuronal convolucional que rivaliza el rendimiento humano en una tarea común de referencia de reconocimiento de objetos visuales.
 
@@ -125,16 +108,9 @@ aqui α y β son los factores de ponderación para el contenido y estilo respect
 El código[3] usado se encuentra [aquí](https://github.com/dan01c/Artistic-Style/blob/master/img/code/code.ipynb)
 
 Las imágenes que se usaron fueron:
-<center>Estilo</center> | <center>Contenido</center> 
--- | --
-![](img/code/estilo.jpg) | ![](img/code/contenido.jpg)
-<center>La noche estrellada(De sterrennacht) Vincent van Gogh, 1889</center> | <center>Palacio de Justicia - Perú</center>
+![Imagen](img/u2.png)
 
-<center>Generación</center> | <center>α=1 ,β=100</center> | <center>α=1 ,β=1000</center>  | <center>α=1 ,β=10000</center> 
--- | -- | -- | --
-100 | ![](img/code/1p100g100.jpg) | ![](img/code/1p1000g100.jpg) | ![](img/code/1p10000g100.jpg)
-500 | ![](img/code/1p100g500.jpg) | ![](img/code/1p1000g500.jpg) | ![](img/code/1p10000g500.jpg)
-1000 | ![](img/code/1p100g1000.jpg) | ![](img/code/1p1000g1000.jpg) | ![](img/code/1p10000g1000.jpg)
+![Imagen](img/u1.png)
 
 ## Conclusiones
 ### Teórico
