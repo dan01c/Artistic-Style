@@ -105,7 +105,7 @@ aqui α y β son los factores de ponderación para el contenido y estilo respect
 
 ## Resultados
 
-El código[3] usado se encuentra [aquí](https://github.com/dan01c/Artistic-Style/blob/master/img/code/code.ipynb)
+El código[3] usado se encuentra [aquí](https://github.com/dan01c/Artistic-Style/blob/master/codigo.ipynb)
 
 Las imágenes que se usaron fueron:
 ![Imagen](img/u2.png)
