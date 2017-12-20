@@ -20,18 +20,7 @@ Los orígenes de las redes neuronales convolucionales se remontan a los años se
 
 Notación:
 
-- $l$ : La capa actual
-- $N_l$ : Número de filtros de la capa $l$
-- $M_l$ : Tamaño de la Representación característica que es es el producto de la anchura por la anchura del  mapa de características
-- $x$ : Imagen a generar
-- $p$ : Contendido (imagen original)
-- $a$ : Estilo
-- $P^l$ : Representación característica generado por $p$
-- $F^l$ : Representación característica generado por $x$
-- $F^l \in R^{N_l x M_l}$
-- $ F^l_{ij}$ : Activación del i-ésimo filtro en la posición $j$ de la capa $l$
-- $w_l$ : Factor de contribución de cada capa para el estilo.
-- $G^l$ : Representación de estilo de $x$
+![Imagen](img/i7.png)
 
 Los resultados se generan sobre la base de la red VGG[4] su web [aquí](http://www.robots.ox.ac.uk/~vgg/research/very_deep/), una red neuronal convolucional que rivaliza el rendimiento humano en una tarea común de referencia de reconocimiento de objetos visuales.
 
